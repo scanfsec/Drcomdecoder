@@ -71,8 +71,8 @@ class Drcomcode(object):
 				ch +=32
 				i -= 1
 				self.to_text.append(chr(ch))
-				self.to_text.append('a')
 			i += 1
+		self.to_text.append('a')
 		return self.to_text
 
 print ''.join(Drcomdecoder().decode("Ma"))
